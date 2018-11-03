@@ -1,0 +1,15 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.entity.Cake" table="蛋糕表">
+        <id name="id" >
+            <column name="蛋糕序号" sql-type="int"></column>
+            <generator class="increment"></generator>
+        </id>
+        <property name="name" column="名称"></property>
+        <property name="price" column="单价"></property>
+        <property name="description" column="简介"></property>
+        <property name="caketype" column="类型"></property>
+    </class>
+</hibernate-mapping>
