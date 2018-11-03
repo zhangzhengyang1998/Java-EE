@@ -1,0 +1,15 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.entity">
+    <class name="User" table="usertable">
+        <id name="id1">
+            <column name="uid"></column>
+            <generator class="assigned" ></generator>
+        </id>
+        <property name="username" column="uname"></property>
+        <property name="pass" column="password"/>
+       <!-- <one-to-one name="person" cascade="all" class="Person"/>-->
+       <!-- <many-to-one name="person" column="personid" cascade="all" unique="true"/>-->
+    </class>
+</hibernate-mapping>
